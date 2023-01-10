@@ -8,7 +8,5 @@ jobs:
     runs-on:ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v1
-    - name: Login to DockerHub Registry
-      - run: echo "This is running inside a ${{ runner.os}} server in GitHub"
-      
+    - run: echo "This is running inside a ${{ runner.os}} server in GitHub"
+      if: github.event_name == 'push'
