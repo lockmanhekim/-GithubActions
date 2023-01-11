@@ -21,4 +21,10 @@ jobs:
       run: sh ./run.sh
       shell: pwsh
       
+  Selenium_Test_Job2:
+    name: Selenium Test Job 2
+    runs-on: ubuntu-latest
+    
+    steps:
+      - run: echo "This is from second job"
         
